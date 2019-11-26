@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
 @font-face {
     font-family: 'Montserrat';
     src: url(../fonts/Montserrat.ttf);
@@ -189,7 +191,6 @@
 
 /* text  */
 .names p:last-child, 
-.sm-text,
 .text-describe {
     font: 15px 'Roboto', sans-serif;
     font-weight: 400;
@@ -199,6 +200,9 @@
 
 .sm-text {
     text-align: center;
+    font: 14px 'Roboto Slab', sans-serif;
+    color: #777777;
+    font-weight: 400;
 }
 
 .text-describe {
@@ -268,10 +272,10 @@
     margin-bottom: 28px;
     height: 50px;
     width: 457px;
-    outline:none;
     text-transform: uppercase;
     border: 1px solid #cccccc;
     border-radius: 3px;  
+    resize: none;
 }
 
 .decor-textarea {
