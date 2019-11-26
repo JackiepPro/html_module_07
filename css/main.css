@@ -182,7 +182,12 @@
 .content {
     background-image: url(../image/banner-footer.png);
     height: 100%;
-    min-height: 676px;
+    /* min-height: 676px; */
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-color: #222222;
+    background-size: cover;
+
 }
 
 .white {
@@ -265,7 +270,7 @@
 
 .decorate-form {
     font: 14px 'Montserrat', sans-serif;
-    color: #bbbbbb;
+    color: #777777;
     width: 230px;
     height: 40px;
     padding-left: 20px;
@@ -277,6 +282,10 @@
     border-radius: 3px;  
     resize: none;
 }
+
+input[type="text"]::placeholder { 
+    color: #bbbbbb; 
+} 
 
 .decor-textarea {
     height: 209px;
@@ -294,6 +303,7 @@
     color: #fff;
     border-radius: 3px; 
     cursor: pointer;
+    outline: none;
 }
 
 .form-btn:hover {
@@ -301,4 +311,8 @@
     transform: translate(10px, 5px);
     transition-duration: 0.25s;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+form {
+    padding-bottom: 116px;
 }
